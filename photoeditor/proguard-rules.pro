@@ -1,0 +1,4 @@
+-keep class com.simplemobiletools.** { *; }
+-dontwarn android.graphics.Canvas
+-dontwarn com.simplemobiletools.**
+-dontwarn org.apache.**

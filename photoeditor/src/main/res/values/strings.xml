@@ -1,0 +1,24 @@
+<resources>
+    <string name="add_text">Add text</string>
+    <string name="hint_type_here">Type here</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_discard">Discard</string>
+    <string name="common_done">Done</string>
+    <string name="common_confirm">Confirm</string>
+    <string name="common_opacity">Opacity</string>
+    <string name="common_size">Size</string>
+    <string name="common_line">Line</string>
+    <string name="common_left">Left</string>
+    <string name="common_middle">Middle</string>
+    <string name="common_right">Right</string>
+    <string name="common_character">Character</string>
+    <string name="common_hue">Hue</string>
+    <string name="common_saturation">Saturation</string>
+    <string name="common_luminance">Luminance</string>
+    <string name="common_crop">Crop</string>
+    <string name="common_rotate">Rotate</string>
+    <string name="common_perspective">Perspective</string>
+
+    <string name="discard_title">Discard your changes?</string>
+    <string name="discard_message">If you cancel, the editing results will be discarded.</string>
+</resources>

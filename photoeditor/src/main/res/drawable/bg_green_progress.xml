@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:height="4dp"
+        android:gravity="center_vertical"
+        android:id="@android:id/background"
+        android:drawable="@drawable/bg_progress_white_4"/>
+    <item android:id="@android:id/progress"
+        android:gravity="center_vertical"
+        android:height="4dp">
+        <clip android:drawable="@drawable/bg_progress_green_4" />
+    </item>
+
+</layer-list>

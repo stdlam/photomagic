@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PhotoEditorView">
+        <attr name="photo_src" format="integer" />
+    </declare-styleable>
+
+    <style name="Radius14BottomSheetBackgroundDialog">
+        <item name="cornerSizeTopRight">14dp</item>
+        <item name="cornerSizeTopLeft">14dp</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="Radius40BottomSheetBackgroundDialog">
+        <item name="cornerRadius">40dp</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="Radius300BottomSheetBackgroundDialog">
+        <item name="cornerRadius">30dp</item>
+    </style>
+
+    <style name="TransparentRadius0BottomSheetBackgroundDialog">
+        <item name="cornerRadius">0dp</item>
+        <item name="background">@android:color/transparent</item>
+    </style>
+
+    <declare-styleable name="RulerView" >
+
+        <attr name="scaleSpace" format="dimension" />
+
+        <attr name="scaleWidth" format="dimension" />
+
+        <attr name="scaleHeight" format="dimension" />
+        <attr name="centerWidth" format="dimension"/>
+        <attr name="centerHeight" format="dimension"/>
+        <attr name="periodHeight" format="dimension"/>
+        <attr name="periodWidth" format="dimension"/>
+        <attr name="radius" format="dimension"/>
+        <attr name="textCenterMargin" format="dimension"/>
+
+        <attr name="maxNumber" format="integer" />
+
+        <attr name="textSize" format="dimension|reference" />
+
+        <attr name="textColor" format="color|reference"/>
+    </declare-styleable>
+</resources>

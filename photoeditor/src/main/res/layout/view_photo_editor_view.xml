@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/cardview_dark_background"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/frmBorder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="28dp"
+        android:paddingVertical="28dp"
+        android:paddingHorizontal="44dp"
+        android:background="@drawable/bg_text_graphic">
+
+        <TextView
+            android:id="@+id/tvPhotoEditorText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textColor="#ffff"
+            android:textSize="50sp"
+            android:layout_gravity="center"
+            tools:text="Hello000" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/llToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:orientation="horizontal"
+        android:paddingVertical="5dp"
+        android:paddingHorizontal="8dp"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/bg_white_rounded_14">
+        <ImageView
+            android:id="@+id/ivDelete"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/ic_delete" />
+
+        <ImageView
+            android:id="@+id/ivDuplicate"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="6dp"
+            android:src="@drawable/ic_duplicate" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivScale"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/ic_scale" />
+</FrameLayout>

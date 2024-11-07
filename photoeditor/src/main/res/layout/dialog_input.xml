@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="30dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/bg_black_rounded_40">
+    <TextView
+        android:id="@+id/tvAddText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_text"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:fontFamily="@font/gilroy_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/etTextWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_type_here"
+        android:textColorHint="#787588"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_rounded_14"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="28dp"
+        android:textSize="16sp"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddText"/>
+
+    <LinearLayout
+        android:id="@+id/llActions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="16dp"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTextWidget">
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="@string/common_cancel"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:fontFamily="@font/gilroy_medium"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/bg_rounded_30"
+            android:foreground="?android:attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/tvDone"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:text="@string/common_done"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:fontFamily="@font/gilroy_medium"
+            android:background="@drawable/bg_purple_rounded_30"
+            android:layout_marginStart="5dp"
+            android:foreground="?android:attr/selectableItemBackground" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

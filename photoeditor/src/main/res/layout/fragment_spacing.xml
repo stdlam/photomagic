@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="30dp"
+    tools:background="@color/black_80"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/tvCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/common_character"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:fontFamily="@font/gilroy_medium"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <SeekBar
+        android:id="@+id/sbCharacter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/bg_green_progress"
+        android:thumb="@drawable/bg_circle_white"
+        android:layout_marginHorizontal="40dp"
+        android:paddingHorizontal="10dp"
+        android:progress="0"
+        android:max="100"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCharacter"
+        app:layout_constraintTop_toTopOf="@+id/tvCharacter"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvCharacterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:fontFamily="@font/gilroy_medium"
+        android:layout_marginEnd="16dp"
+        android:text="0%"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/sbCharacter"
+        app:layout_constraintTop_toTopOf="@+id/sbCharacter"/>
+
+    <TextView
+        android:id="@+id/tvLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/common_line"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:fontFamily="@font/gilroy_medium"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCharacter"/>
+
+    <SeekBar
+        android:id="@+id/sbLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progressDrawable="@drawable/bg_green_progress"
+        android:thumb="@drawable/bg_circle_white"
+        android:layout_marginHorizontal="40dp"
+        android:paddingHorizontal="10dp"
+        android:progress="0"
+        android:max="100"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLine"
+        app:layout_constraintTop_toTopOf="@+id/tvLine"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvLineValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:fontFamily="@font/gilroy_medium"
+        android:layout_marginEnd="16dp"
+        android:text="0%"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLine"
+        app:layout_constraintTop_toTopOf="@+id/sbLine"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAligns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLine"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_tool" />
+</androidx.constraintlayout.widget.ConstraintLayout>

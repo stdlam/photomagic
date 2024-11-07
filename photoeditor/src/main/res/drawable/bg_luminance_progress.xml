@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:height="4dp"
+        android:gravity="center_vertical"
+        android:id="@android:id/background">
+        <shape>
+            <solid android:color="@android:color/white" />
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <item android:height="4dp"
+        android:gravity="center_vertical"
+        android:id="@android:id/background">
+        <shape>
+            <gradient
+                android:startColor="#371317"
+                android:centerColor="@android:color/transparent"
+                android:endColor="@android:color/transparent"
+                android:centerY="0.4" />
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+    <item android:height="4dp"
+        android:gravity="center_vertical"
+        android:id="@android:id/background">
+        <shape>
+            <gradient
+                android:startColor="@android:color/transparent"
+                android:centerColor="#88323A"
+                android:endColor="@android:color/transparent"
+                android:centerY="0.4" />
+        </shape>
+    </item>
+    <item android:height="4dp"
+        android:gravity="center_vertical"
+        android:id="@android:id/background">
+        <shape>
+            <gradient
+                android:startColor="@android:color/transparent"
+                android:centerColor="#8F3038"
+                android:endColor="@android:color/transparent"
+                android:centerY="0.7" />
+        </shape>
+    </item>
+    <item android:height="4dp"
+        android:gravity="center_vertical"
+        android:id="@android:id/background">
+        <shape>
+            <gradient
+                android:startColor="@android:color/transparent"
+                android:centerColor="@android:color/transparent"
+                android:endColor="#8F3038" />
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+</layer-list>
