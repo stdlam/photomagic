@@ -1,3 +1,6 @@
+plugins {
+    id 'maven-publish'
+}
 apply plugin: 'com.android.library'
 //apply from: 'maven-push.gradle'
 
@@ -37,7 +40,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    //testImplementation libs.junit.v412
+    testImplementation(libs.junit)
     //implementation(libs.androidx.appcompat)
     //implementation libs.appcompat.v7
 }
