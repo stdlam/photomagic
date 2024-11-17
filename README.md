@@ -30,8 +30,8 @@ PhotoEditProvider(LocalContext.current).startEdit(selectedImageUri)
 ```
 
 ## 🛠️ Requirements
-Android API Level: 24 and above
-Language: Kotlin / Java
+- Android API Level: 24 and above
+- Language: Kotlin / Java
 
 ## 🤝 Contributions
 We welcome contributions! Feel free to submit a pull request or open an issue for any feature requests or bug reports.
