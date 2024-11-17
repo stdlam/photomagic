@@ -1,6 +1,6 @@
 # PhotoMagic: Powerful Photo Editor Library for Android
 
-PhotoMagic is a versatile and easy-to-use photo editor library for Android applications. It provides a wide range of features to enhance your photos with customizable effects, filters, stickers, text overlays, and more. Whether you're building a social media app, a camera app, or any image-centric application, PhotoMagic simplifies photo editing with its powerful capabilities.
+PhotoMagic is a versatile and easy-to-use photo editor library for Android applications. It provides a wide range of features to enhance your photos with customizable effects, filters, text overlays, and more. Whether you're building a social media app, a camera app, or any image-centric application, PhotoMagic simplifies photo editing with its powerful capabilities.
 
 ## 🎉 Key Features
 
