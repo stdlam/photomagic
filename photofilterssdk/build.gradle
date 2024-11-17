@@ -3,6 +3,7 @@ plugins {
 }
 apply plugin: 'com.android.library'
 //apply from: 'maven-push.gradle'
+group = "com.github.stdlam"
 
 android {
     compileSdkVersion 34
@@ -34,6 +35,14 @@ android {
     externalNativeBuild {
         ndkBuild {
             path file('src/main/jni/Android.mk')
+        }
+    }
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            from components.findByName('release')
         }
     }
 }

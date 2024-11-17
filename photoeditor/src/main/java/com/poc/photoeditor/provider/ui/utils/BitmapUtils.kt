@@ -1,5 +1,8 @@
 package com.poc.photoeditor.provider.ui.utils
 
+import android.R.attr.name
+import android.content.ContentResolver
+import android.content.ContentValues
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Bitmap.CompressFormat
@@ -7,8 +10,8 @@ import android.graphics.Canvas
 import android.graphics.Matrix
 import android.graphics.Paint
 import android.net.Uri
+import android.os.Environment
 import android.provider.MediaStore
-import java.io.ByteArrayInputStream
 import java.io.ByteArrayOutputStream
 import java.io.InputStream
 import java.io.OutputStream
@@ -42,11 +45,16 @@ object BitmapUtils {
         var inputStream: InputStream? = null
         var outputStream: OutputStream? = null
         try {
-            val stream = ByteArrayOutputStream()
-            bitmap.compress(CompressFormat.JPEG, 100, stream)
-            inputStream = ByteArrayInputStream(stream.toByteArray())
-            outputStream = context.contentResolver.openOutputStream(outputUri)
-            inputStream.copyTo(outputStream!!)
+            val resolver: ContentResolver = context.contentResolver
+            val contentValues = ContentValues()
+            // good name
+            contentValues.put(MediaStore.MediaColumns.DISPLAY_NAME, "$name.jpg")
+            contentValues.put(MediaStore.MediaColumns.MIME_TYPE, "image/jpg")
+            contentValues.put(MediaStore.MediaColumns.RELATIVE_PATH, Environment.DIRECTORY_PICTURES)
+            resolver.insert(MediaStore.Images.Media.EXTERNAL_CONTENT_URI, contentValues)?.let { imageUri ->
+                outputStream = resolver.openOutputStream(imageUri)
+                bitmap.compress(CompressFormat.JPEG, 100, outputStream!!)
+            }
         } catch (e: Exception) {
             e.printStackTrace()
             return
